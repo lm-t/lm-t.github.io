@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.078c7452.css",
-    "main.js": "/static/js/main.2b847de7.js",
-    "static/js/787.37faa4c4.chunk.js": "/static/js/787.37faa4c4.chunk.js",
-    "static/media/datacenter.jpg": "/static/media/datacenter.9296b95d58bf9abf0a31.jpg",
-    "static/media/bust.jpg": "/static/media/bust.5b4b1332f3de97933d11.jpg",
-    "static/media/cybersecurity.webp": "/static/media/cybersecurity.44f906bc38b08be34610.webp",
-    "static/media/about-img.png": "/static/media/about-img.fe22d8e2fe8fea8ec9ac.png",
-    "index.html": "/index.html",
-    "main.078c7452.css.map": "/static/css/main.078c7452.css.map",
-    "main.2b847de7.js.map": "/static/js/main.2b847de7.js.map",
-    "787.37faa4c4.chunk.js.map": "/static/js/787.37faa4c4.chunk.js.map"
+    "main.css": "/portfolio-site/static/css/main.078c7452.css",
+    "main.js": "/portfolio-site/static/js/main.e19283ea.js",
+    "static/js/787.37faa4c4.chunk.js": "/portfolio-site/static/js/787.37faa4c4.chunk.js",
+    "static/media/datacenter.jpg": "/portfolio-site/static/media/datacenter.9296b95d58bf9abf0a31.jpg",
+    "static/media/bust.jpg": "/portfolio-site/static/media/bust.5b4b1332f3de97933d11.jpg",
+    "static/media/cybersecurity.webp": "/portfolio-site/static/media/cybersecurity.44f906bc38b08be34610.webp",
+    "static/media/about-img.png": "/portfolio-site/static/media/about-img.fe22d8e2fe8fea8ec9ac.png",
+    "index.html": "/portfolio-site/index.html",
+    "main.078c7452.css.map": "/portfolio-site/static/css/main.078c7452.css.map",
+    "main.e19283ea.js.map": "/portfolio-site/static/js/main.e19283ea.js.map",
+    "787.37faa4c4.chunk.js.map": "/portfolio-site/static/js/787.37faa4c4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.078c7452.css",
-    "static/js/main.2b847de7.js"
+    "static/js/main.e19283ea.js"
   ]
 }
