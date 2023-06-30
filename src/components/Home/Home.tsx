@@ -15,14 +15,15 @@ function Home() {
 
 	const [disciplineIndex, setDisciplineIndex] = useState(0);
 	useEffect(() => {
-		setTimeout(() => {
-		  let next = disciplineIndex + 1;
-		  if (next === disciplines.length) {
-			next = 0;
-		  }
-		  setDisciplineIndex(next);
+		const id = setTimeout(() => {
+			setDisciplineIndex((disciplineIndex + 1) % disciplines.length);
 		}, 2 * 1000);
-	  }, [disciplineIndex, setDisciplineIndex]);
+		return () => {
+			clearInterval(id);
+		};
+	  },[disciplineIndex, setDisciplineIndex]);
+
+	const currentDiscipline = disciplines.find((item, index) => index === disciplineIndex);
 
 	return (
 		<section>
@@ -42,7 +43,7 @@ function Home() {
 									</motion.span>
 								</motion.div> */}
 								<AnimatePresence>
-									<motion.span className="disciplines" initial={{ y: -20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} exit={{ opacity: 0}} key={disciplineIndex} transition={{y: { type: "spring", stiffness: 300, damping: 200 }, opacity: { duration: 0.5 }}}>
+									<motion.span className="disciplines" initial={{ y: -20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} exit={{ opacity: 0}} key={currentDiscipline} transition={{y: { type: "spring", stiffness: 300, damping: 200 }, opacity: { duration: 0.3 }}}>
 									{/* <motion.span className="disciplines" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{opacity: 0}} key={disciplineIndex} transition={{ opacity: { duration: 0.5 }}}> */}
 										{disciplines[disciplineIndex]}
 									</motion.span>

@@ -176,7 +176,7 @@ button:focus {
 }
 
 .home-content {
-  padding: 9rem 0 2rem !important;
+  padding: 9rem 0 9rem !important;
   color: rgb(143, 187, 226);
   text-align: left;
 }
@@ -206,14 +206,14 @@ button:focus {
 
 .home-about-section {
   position: relative;
-  padding-bottom: 70px !important;
-  padding-top: 70px !important;
+  padding-bottom: 2rem !important;
+  padding-top: 2rem !important;
 }
 
 .home-about-description {
   color: rgb(0, 0, 0) !important;
-  padding-top: 100px !important;
-  padding-bottom: 20px !important;
+  padding-top: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
   text-align: center;
 }
 
@@ -410,7 +410,7 @@ button:focus {
 }
 
 .tech-icons-icon {
-  font-size: 4.5em !important;
+  font-size: 2.5em !important;
   color: white;
 }
 
