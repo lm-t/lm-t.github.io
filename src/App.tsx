@@ -12,7 +12,7 @@ import Contact from "./components/Contact/Contact";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Route,
   Routes,
   Navigate
@@ -48,6 +48,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
         <Footer />
       </div>
