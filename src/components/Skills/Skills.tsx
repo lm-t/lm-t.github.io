@@ -17,7 +17,6 @@ import {
     FaGitlab,
     FaGithub
 } from "react-icons/fa6"
-
 import { 
     SiAnsible,
     SiCisco,
@@ -31,20 +30,51 @@ import {
     SiCplusplus 
 } from "react-icons/si";
 
+import Modal from 'react-bootstrap/Modal';
+import Button from 'react-bootstrap/Button';
+import { useState } from 'react';
+
 function Skills() {
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
     return(
         <Container fluid className="skills-section">
             <Container>
                 <Row style={{ justifyContent: "center", paddingTop: "70px" }}><h1 className="project-heading">Languages</h1></Row>
                 <Row style={{ justifyContent: "center"}}>
-                    <Col xs={4} md={2} className="tech-icons">
+                    <Col xs={4} md={2} className="tech-icons" onClick={handleShow}>
                         <div className="tech-icons-icon"><FaPython/></div>
                         <p>Python</p>
                     </Col>
-                    <Col xs={4} md={2} className="tech-icons">
+                    <Modal show={show} onHide={handleClose} centered>
+                        <Modal.Header closeButton>
+                        <Modal.Title>Modal heading</Modal.Title>
+                        </Modal.Header>
+                        <Modal.Body>Woohoo, you are reading this text in a modal!</Modal.Body>
+                        <Modal.Footer>
+                        <Button variant="primary" onClick={handleClose}>
+                            Close
+                        </Button>
+                        </Modal.Footer>
+                    </Modal>
+                    <Col xs={4} md={2} className="tech-icons" onClick={handleShow}>
                         <div className="tech-icons-icon"><FaGolang/></div>
                         <p>Go</p>
                     </Col>
+                    <Modal show={show} onHide={handleClose} centered>
+                        <Modal.Header closeButton>
+                        <Modal.Title>Modal heading</Modal.Title>
+                        </Modal.Header>
+                        <Modal.Body>Test 2, you are reading this text in a modal!</Modal.Body>
+                        <Modal.Footer>
+                        <Button variant="primary" onClick={handleClose}>
+                            Close
+                        </Button>
+                        </Modal.Footer>
+                    </Modal>
                     <Col xs={4} md={2} className="tech-icons">
                         <div className="tech-icons-icon"><SiCplusplus/></div>
                         <p>C++</p>
